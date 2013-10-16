@@ -10,7 +10,7 @@ body{font:normal 14px/24px "Microsoft Yahei","冬青黑体简体中文 w3","宋�
 h1,h2,h3,h4,h5,h6,h7 {font-weight:normal;}
 a {text-decoration:none;color:#000;}
 a:hover {text-decoration:none;}
-.container-hx {width:1280px;max-width:1280px;margin:0 auto;z-index:10;height:100%;}
+.container-hx {width:1280px;max-width:1280px;margin:0 auto;z-index:10;height:100%;position: relative;}
 img {}
 .row-fluid-wrap-hx {float:left;width:100%;height:100%;}
 .center-container-hx {margin-left:180px;height:100%;background-color:#FAFAFC;
@@ -88,9 +88,9 @@ box-shadow: 2px 0 5px rgba(214, 214, 215, 0.9), -2px 0 5px rgba(214, 214, 215, 0
 *  by见天
 *  13.04.16
 */
-.search {position:relative;margin-top:17px;}
+.search {position:relative;margin-top:17px;/* width: 100%; */}
 .search-btn {background-color:transparent;border:none;position:absolute;left:2px;top:4px;}
-.search .input-text {padding-left:30px;width:122px;}
+.search .input-text {padding-left: 10px;width: 100%;height: 25px;line-height: 25px;/* background: none; *//* border: none; */}
 
 
 /*
@@ -620,7 +620,7 @@ body .no-bdr {border-bottom:none;}
 .pinglun-all-subtitle {font-size:14px;}
 .pinglun-all-subtitle a {color:#006cd8;margin:0 10px;}
 .pinglun-more-a,
-#pinglun .pinglun-more-a:hover{display:block;height:30px;line-height:30px;text-align:center;color:#fff;background:#666;} 
+#pinglun .pinglun-more-a:hover{display:block;height:30px;line-height:30px;text-align:center;color:#fff;background:#666;}
 .neirong-shouquan {font-size:14px;font-family:'楷体';padding-top:30px;}
 .neirong-shouquan span {}
 .neirong-shouquan span a {color:#333;}
@@ -790,7 +790,7 @@ html .show {display:block;}
 .dianping-mini-box .no-img {width:auto;border:none;color:#666;font-size:12px;}
 .dianping-mini-box .a-more {margin-right:0;color: #666;border:none;text-align: center;font-size: 18px;position: relative;top: -5px;}
 .i-dianping-list-jiao {position:absolute;width:18px;height:10px;background:url(../img/btn_bg.png) no-repeat -19px -84px;display:block;overflow:hidden;top:-10px;right:20px;}
-	
+
 /*
 *  观点列表页
 *  by见天
@@ -809,7 +809,7 @@ html .show {display:block;}
 .opinions-box .view-box .img-box img {width:167px;box-shadow:1px 1px 1px #ccc;border-radius:2px;}
 .opinions-box .view-box .tags-box {margin-left:-10px;}
 .opinions-box .view-box .article-summary {font-size:14px;margin-left:214px;}
-	
+
 /*
 *  观点列表页
 *  by见天
@@ -1199,7 +1199,7 @@ ul.reg-wrap-title li {width:230px;line-height:28px;text-align:center;float:left;
 .personal-dingyue-biaoqian li a {color:#006cd8;margin:0 10px;}
 .personal-dingyue-biaoqian .close-ico {width:13px;height:13px;display:block;position:absolute;right:5px;top:2px;background:url(../img/btn_bg.png) no-repeat -91px -336px;cursor:pointer;}
 .personal-dingyue-biaoqian li a:hover .close-ico {background-position:-105px -336px;}
-.personal-dingyue-biaoqian li p.author-img,  
+.personal-dingyue-biaoqian li p.author-img,
 .personal-dingyue-biaoqian li p.name {overflow:hidden;text-align:center;}
 .personal-dingyue-biaoqian li p.author-img {width:80px;height:50px;}
 .personal-dingyue-biaoqian li p.name {width:80px;height:20px;line-height:20px;}
@@ -1614,19 +1614,19 @@ ul.reg-wrap-title li {width:230px;line-height:28px;text-align:center;float:left;
 		background:-webkit-linear-gradient(top,#333,#666);
 		background:-o-linear-gradient(top,#333,#666);
 		background:linear-gradient(top,#333,#666);
-	
+
 	}
-	
+
 	.side-menu-top {float:left;box-shadow:none;}
 	.logo {float:left;}
 	.side-menu-top ul.side-menu-list {overflow:hidden;display:block;float:left;}
 	.side-menu-list li {float:left;width:74px;height:auto;line-height:136px;background:none;border:none;}
 	.side-menu-list li a {height:98px;display:block;}
-		
+
 	.container-hx {padding-top:100px;width:900px;}
 	.center-container-hx {margin-left:0;}
-	.search {float:left;margin:55px 0 0 30px;}
-	
+	.search {margin: 16px 39px 0 0;width: 120px;float: right;/* border: none; */}
+
 	.center-ctr-box {
 		margin-left: 15px;
 		margin-right: 320px;
@@ -1637,7 +1637,7 @@ ul.reg-wrap-title li {width:230px;line-height:28px;text-align:center;float:left;
 	}
 	.go-top .pos-btn {
 	}
-	
+
 	.neirong table .span-img img {
 		max-width: 565px!important;
 		width: expression(this.offsetWidth >= 565 ? 565:'auto');
@@ -1646,7 +1646,7 @@ ul.reg-wrap-title li {width:230px;line-height:28px;text-align:center;float:left;
 		max-width: 474px;
 		width: expression(this.offsetWidth >= 474 ? 474:'auto');
 	}
-	
+
 	.side-share-box {width:254px;}
 	.side-share-box ul {width:110px;}
 	.side-share-box ul li.pos-btn {margin-left:18px}
@@ -1672,7 +1672,7 @@ ul.reg-wrap-title li {width:230px;line-height:28px;text-align:center;float:left;
 @media (min-width:1024px) and (max-width:1152px) {
 	.container-hx {width:1024px;}
 	.center-container-hx {margin-left:170px;}
-	
+
 	.center-ctr-box {
 		margin-left: 15px;
 		margin-right: 380px;
@@ -1680,7 +1680,7 @@ ul.reg-wrap-title li {width:230px;line-height:28px;text-align:center;float:left;
 	.side-container-hx {
 		margin-right:15px;
 	}
-	
+
 	.neirong table .span-img img {
 		max-width: 459px;_width: expression(this.offsetWidth >= 459 ? 459:'auto');
 	}
@@ -1703,7 +1703,7 @@ ul.reg-wrap-title li {width:230px;line-height:28px;text-align:center;float:left;
 @media (min-width:1152px) and (max-width:1280px) {
 	.container-hx {width:1160px;}
 	.center-container-hx {margin-left:170px;}
-	
+
 	.center-ctr-box {
 		margin-left: 15px;
 		margin-right: 380px;
@@ -1711,7 +1711,7 @@ ul.reg-wrap-title li {width:230px;line-height:28px;text-align:center;float:left;
 	.side-container-hx {
 		margin-right:15px;
 	}
-	
+
 	.neirong table .span-img img {
 		max-width: 595px!important;
 	}
@@ -1726,7 +1726,7 @@ ul.reg-wrap-title li {width:230px;line-height:28px;text-align:center;float:left;
 
 /*mvmap*/
 .top-nav-box{background-color:#3498DB;height:56px;padding:10px 0 0 0;}
-.biaoqian{background-color:#2980b9;margin:0 0 0 10px;padding:12px;border: 0; line-height: 12px;width:810px;}
+.biaoqian{background-color:#2980b9;margin: 0 auto;padding:12px;border: 0; line-height: 12px;width: 95%;}
 .biaoqian a{color: #FFF;display: inline-block;padding: 0 5px;white-space: nowrap;}
 .idx-toutiao .box-img img {width: 640px;height:240px;max-height:240px;}
 .login-box a{color: #FFF;}
